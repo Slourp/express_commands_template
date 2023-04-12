@@ -4,7 +4,7 @@ import { Command } from 'commander';
 import { CustomCommand } from '@configCommands/commandInterface';
 
 
-const COMMANDS_PATH = 'src/commands';
+const COMMANDS_PATH = path.join(__dirname, '..', '..', 'commands');
 
 async function loadCommands(commander: Command) {
     const commandFiles = fs.readdirSync(COMMANDS_PATH).filter((file) => file.endsWith('.ts'));

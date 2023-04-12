@@ -1,6 +1,6 @@
 
+import { CustomCommand } from '@configCommands/commandInterface';
 import { Command } from 'commander';
-import { CustomCommand } from '../config/commands/commandInterface';
 
 class HelloCommandCommand implements CustomCommand {
   public command: Command;
